@@ -1,0 +1,7 @@
+./.idea/inspectionProfiles/profiles_settings.xml
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

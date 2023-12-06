@@ -1,0 +1,149 @@
+* {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: auto;
+  color: darkcyan;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#word_display {
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(5, 7vh);
+  grid-template-rows: repeat(6, 6vh);
+}
+
+.box {
+  width: 5vh;
+  height: 5vh;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 4.5vh;
+  color: white;
+}
+
+.box.correct {
+  background-color: rgb(20, 183, 20);
+  opacity: 0.9;
+}
+
+.box.incorrect {
+  background-color: rgb(128, 128, 128);
+  opacity: 0.9;
+}
+
+.box.misplaced {
+  background-color: orange;
+  opacity: 0.9;
+}
+
+.keyboardInput {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+input {
+  position: relative;
+  width: 20%;
+  height: 1.1em;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.keyboard {
+  display: fex;
+}
+
+#keyboard2 {
+  margin: 0.5rem 0;
+}
+
+.key {
+  font-size: 1.5vh;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin: 0 2px;
+  min-width: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.popup {
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  height: 0px;
+  width: 170px;
+}
+
+.popup.invisible {
+  display: none;
+}
+
+.popup-q {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  opacity: 0.9;
+  height: 1.8em;
+  width: 170px;
+  color: black;
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.replayBtn {
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+  width: 50px;
+  height: 30px;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#yesBtn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.info-banner {
+  font-size: 10px;
+}

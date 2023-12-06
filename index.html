@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
+    <script src="assets/scripts/word_bank.js" defer type="module"></script>
+    <script src="assets/scripts/animation.js" defer type="module"></script>
+    <script src="assets/scripts/app.js" defer type="module"></script>
+    <script src="assets/scripts/keyboard.js" defer type="module"></script>
+</head>
+<body>
+    <h1>WORDLE</h1>
+    <div class="stage">
+      <p id="word_display"></p>
+      <div id="popup" class="popup invisible">
+        <p class="popup-q">Play again?</p>
+        <button id="yesBtn" class="replayBtn">Yes</button>
+        <button id="noBtn" class="replayBtn">No</button>
+      </div>
+      <div id="wordBoard" class="board">
+        <p id="g1_1" class="box box1">a</p>
+        <p id="g1_2" class="box box2">b</p>
+        <p id="g1_3" class="box box3">c</p>
+        <p id="g1_4" class="box box4">d</p>
+        <p id="g1_5" class="box box5">e</p>
+        <p id="g2_1" class="box box1">f</p>
+        <p id="g2_2" class="box box2">g</p>
+        <p id="g2_3" class="box box3">h</p>
+        <p id="g2_4" class="box box4">i</p>
+        <p id="g2_5" class="box box5">j</p>
+        <p id="g3_1" class="box box1">k</p>
+        <p id="g3_2" class="box box2">l</p>
+        <p id="g3_3" class="box box3">m</p>
+        <p id="g3_4" class="box box4">n</p>
+        <p id="g3_5" class="box box5">o</p>
+        <p id="g4_1" class="box box1">p</p>
+        <p id="g4_2" class="box box2">q</p>
+        <p id="g4_3" class="box box3">r</p>
+        <p id="g4_4" class="box box4">s</p>
+        <p id="g4_5" class="box box5">t</p>
+        <p id="g5_1" class="box box1">u</p>
+        <p id="g5_2" class="box box2">v</p>
+        <p id="g5_3" class="box box3">w</p>
+        <p id="g5_4" class="box box4">x</p>
+        <p id="g5_5" class="box box5">y</p>
+        <p id="g6_1" class="box box1">z</p>
+        <p id="g6_2" class="box box2">a</p>
+        <p id="g6_3" class="box box3">b</p>
+        <p id="g6_4" class="box box4">c</p>
+        <p id="g6_5" class="box box5">d</p>
+      </div>
+    </div>
+    <div class="keyboardInput">
+      <input id="inputField" class="input" type="text"/>
+      <div id="keyboard1" class="keyboard"></div>
+      <div id="keyboard2" class="keyboard"></div>
+      <div id="keyboard3" class="keyboard"></div>
+    </div>
+    <p class="info-banner">Project based on classic Wordle game.</p>
+    
+</body>
+</html>
